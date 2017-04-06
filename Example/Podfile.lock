@@ -14,11 +14,11 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - SKFFMBase (0.1.0):
-    - SKFFMBase/Category (= 0.1.0)
-    - SKFFMBase/Network (= 0.1.0)
-  - SKFFMBase/Category (0.1.0)
-  - SKFFMBase/Network (0.1.0):
+  - SKFFMBase (0.2.0):
+    - SKFFMBase/Category (= 0.2.0)
+    - SKFFMBase/Network (= 0.2.0)
+  - SKFFMBase/Category (0.2.0)
+  - SKFFMBase/Network (0.2.0):
     - AFNetworking
 
 DEPENDENCIES:
@@ -30,7 +30,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  SKFFMBase: b39161f06c04aaedce0d05f23ffd5c8aa8b5ed70
+  SKFFMBase: a768aa3045b34fdcfdbd020f12bd693f638811ae
 
 PODFILE CHECKSUM: 012410da841ae7b19d506063ae2c23e91b3818df
 

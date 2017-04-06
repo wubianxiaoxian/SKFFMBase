@@ -28,9 +28,9 @@ xcode-select --install
 </tr>
 </table>
 # Available Actions
-### SKFDownLoadLib
+### ManagerPodLib
 ```
-fastlane SKFDownLoadLib
+fastlane ManagerPodLib
 ```
 快速的升级维护pod私有库
 
