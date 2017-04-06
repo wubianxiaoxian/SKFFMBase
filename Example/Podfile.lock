@@ -1,5 +1,25 @@
 PODS:
-  - SKFFMBase (0.1.0)
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - SKFFMBase (0.1.0):
+    - SKFFMBase/Category (= 0.1.0)
+    - SKFFMBase/Network (= 0.1.0)
+  - SKFFMBase/Category (0.1.0)
+  - SKFFMBase/Network (0.1.0):
+    - AFNetworking
 
 DEPENDENCIES:
   - SKFFMBase (from `../`)
@@ -9,7 +29,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SKFFMBase: '04355198b1bd1b6b9e1906522282adda2e5a3625'
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  SKFFMBase: b39161f06c04aaedce0d05f23ffd5c8aa8b5ed70
 
 PODFILE CHECKSUM: 012410da841ae7b19d506063ae2c23e91b3818df
 

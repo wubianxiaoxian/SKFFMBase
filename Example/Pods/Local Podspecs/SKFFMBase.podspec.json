@@ -18,5 +18,19 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "SKFFMBase/Classes/**/*"
+  "subspecs": [
+    {
+      "name": "Category",
+      "source_files": "SKFFMBase/Classes/Category/**/*"
+    },
+    {
+      "name": "Network",
+      "source_files": "SKFFMBase/Classes/Network/**/*",
+      "dependencies": {
+        "AFNetworking": [
+
+        ]
+      }
+    }
+  ]
 }

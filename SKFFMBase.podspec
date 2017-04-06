@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SKFFMBase'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'A short description of SKFFMBase.'
 
 # This description is used to generate tags and improve search results.
@@ -30,9 +30,20 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'SKFFMBase/Classes/**/*'
+# s.source_files = 'SKFFMBase/Classes/**/*'
   
-  # s.resource_bundles = {
+s.subspec "Category" do |c|
+c.source_files = 'SKFFMBase/Classes/Category/**/*'
+end
+
+s.subspec "Network" do |n|
+n.source_files = 'SKFFMBase/Classes/Network/**/*'
+n.dependency 'AFNetworking'
+end
+
+
+
+# s.resource_bundles = {
   #   'SKFFMBase' => ['SKFFMBase/Assets/*.png']
   # }
 
