@@ -10,6 +10,9 @@
 #endif
 #endif
 
+#import "CALayer+PauseAimate.h"
+#import "UIImage+SKFImage.h"
+#import "UIView+SKFLayout.h"
 #import "UIView+SKFNib.h"
 #import "SKFSessionManager.h"
 

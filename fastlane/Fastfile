@@ -26,14 +26,18 @@ version_bump_podspec(path: "#{targetName}.podspec", version_number: tagName)
 # 3. 提交代码到远程代码仓库
 #   1. git add .
 git_add(path: ".")
-#   2. git commit -m ‘xx’
+#   2. git commit -m "xx"
 git_commit(path: ".", message: "升级版本")
 #   3. git push origin master
 push_to_git_remote
 
-
 # 判断标签是否已经存在
-# 如果存在, 删除 不存 (自定义)
+if git_tag_exists(tag: tagName)
+# 如果存在, 删除(本地&远程)    (自定义)
+remove_tag(tagName: tagName)
+
+end
+
 
 # 4. 打标签提交
 #   1. git tag 0.2.0
@@ -45,5 +49,5 @@ push_git_tags
 
 # 5. 提交podspecs
 # pod repo push XMGFMSpecs XMGFMBase.podspec
-pod_push(path: "#{targetName}.podspec", repo: "SKFFMPrivate")
+pod_push(path: "#{targetName}.podspec", repo: "SKFFMPrivate", allow_warnings:true)
 end
